@@ -66,7 +66,9 @@
 
         // Add icons to each block
         $this.find('.vtimeline-point').each(function() {
-            $(this).prepend('<div class="vtimeline-icon"><i class="fa fa-map-marker"></i></div>');
+            // Edit: Make title parameterizable
+            var titleText = $(this).parent().data('title') || 'Stockholm, Sweden'; // Use data-title attribute or 'Default Title'
+            $(this).prepend('<div class="vtimeline-icon"><i class="fa fa-map-marker" title="' + titleText + '"></i></div>');
         });
 
         // Add dates to the timeline if exists
