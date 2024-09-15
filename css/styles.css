@@ -51,7 +51,7 @@ body.active {
 }
 
 .keywords {
-    padding: 10px 0; /* Add padding to the top and bottom */
+    font-style: italic;
 }
 
 
@@ -393,9 +393,14 @@ footer {
   color: #374054;
 }
 #about p {
-  color: #74808a;
-  margin: 0;
-}
+    /* color: #74808a; */
+    color: #000000;
+    margin: 0;
+    font-size: 1.2em; /* Increase font size */
+    line-height: 1.6em; /* Improve readability */
+    text-align: justify; /* Ensure consistent formatting on both sides */
+  }
+
 
 /*
     --------------------------------
@@ -437,6 +442,11 @@ footer {
   background: linear-gradient(to bottom, #3498db, rgba(52, 152, 219, 0));
   top: 100%;
   left: 303px;
+}
+
+#experience-timeline h4 {
+    color: black; /* Set the text color to black */
+
 }
 
 .vtimeline-content {
@@ -569,7 +579,7 @@ footer {
   overflow: hidden;
   background: #fff;
   border-radius: 4px;
-  padding: 20px;
+  padding: 30px;
 }
 
 .project-image img {
